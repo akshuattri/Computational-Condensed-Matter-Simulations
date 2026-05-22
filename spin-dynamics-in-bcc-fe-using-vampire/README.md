@@ -6,16 +6,12 @@ This project was developed for learning, numerical experimentation, and research
 
 ---
 
-# Physics
+## Physics
 
 The spin dynamics are governed by the Landau-Lifshitz-Gilbert (LLG) equation:
 
 $$
-\frac{d\vec{S}}{dt}
-=
--\gamma \vec{S} \times \vec{H}_{\mathrm{eff}}
-+
-\alpha \vec{S} \times \frac{d\vec{S}}{dt}
+\frac{d\vec{S}}{dt} = -\gamma \vec{S} \times \vec{H}_{\mathrm{eff}} + \alpha \vec{S} \times \frac{d\vec{S}}{dt}
 $$
 
 where:

@@ -1,13 +1,8 @@
-# Spin Dynamics in BCC Fe using VAMPIRE
+# Spin Dynamics in BCC Fe Using VAMPIRE
 
-Atomistic spin dynamics simulation of ferromagnetic BCC Fe using the VAMPIRE atomistic spin simulation framework.
+Exploratory atomistic spin dynamics simulations of body-centered cubic (BCC) iron using the VAMPIRE atomistic simulation package.
 
-This project demonstrates:
-- atomistic Heisenberg spin simulations
-- Landau-Lifshitz-Gilbert (LLG) spin dynamics
-- magnetic relaxation
-- thermal spin fluctuations
-- computational condensed matter physics workflows
+This project was developed for learning, numerical experimentation, and research training in computational condensed matter physics and magnetization dynamics.
 
 ---
 
@@ -16,49 +11,42 @@ This project demonstrates:
 The spin dynamics are governed by the Landau-Lifshitz-Gilbert (LLG) equation:
 
 $$
-\frac{d\vec S}{dt}
+\frac{d\vec{S}}{dt}
 =
--\gamma \vec S \times \vec H_{eff}
+-\gamma \vec{S} \times \vec{H}_{\mathrm{eff}}
 +
-\alpha \vec S \times \frac{d\vec S}{dt}
+\alpha \vec{S} \times \frac{d\vec{S}}{dt}
 $$
 
 where:
-- $\vec S$ = atomic spin vector
+
+- $\vec{S}$ = atomic spin vector
 - $\gamma$ = gyromagnetic ratio
 - $\alpha$ = damping constant
-- $\vec H_{eff}$ = effective magnetic field
+- $\vec{H}_{\mathrm{eff}}$ = effective magnetic field
 
 The magnetic interactions are described using the Heisenberg Hamiltonian:
 
 $$
-H
-=
--\sum_{ij}
-J_{ij}
-\vec S_i \cdot \vec S_j
+H = -\sum_{ij} J_{ij}\,\vec{S}_i \cdot \vec{S}_j
 $$
+
+where:
+
+- $J_{ij}$ = exchange interaction
+- $\vec{S}_i$, $\vec{S}_j$ = neighboring atomic spins
 
 ---
 
 # Features
 
-- BCC Fe crystal structure
-- Atomistic spin dynamics
-- Heisenberg exchange interactions
-- Magnetic anisotropy
-- Time evolution of magnetization
+- Atomistic spin dynamics simulations
+- Magnetization dynamics in BCC Fe
+- Time evolution of magnetic moments
 - Magnetization component analysis
-- Automated plotting workflow
-
----
-
-# Software Used
-
-- VAMPIRE
-- Python
-- NumPy
-- Matplotlib
+- Spin precession and damping
+- Frequency-domain magnetic behavior
+- VAMPIRE-based simulations
 
 ---
 
@@ -66,124 +54,89 @@ $$
 
 ```text
 spin-dynamics-in-bcc-fe-using-vampire/
-│
-├── input
+
 ├── Fe.mat
-├── run.sh
+├── input
 ├── plot.py
-├── output
-├── log
-│
+├── run.sh
+├── README.md
 ├── magnetization_components.png
 ├── magnetization_magnitude.png
-│
-└── README.md
+├── output/
+└── log/
 ```
 
 ---
 
-# Simulation Parameters
+# Requirements
 
-| Parameter | Value |
-|---|---|
-| Material | BCC Fe |
-| Lattice Constant | 2.866 Å |
-| System Size | 8 × 8 × 8 |
-| Temperature | 300 K |
-| Time Step | 1 fs |
-| Total Time Steps | 50000 |
-| Spin Moment | 2.2 μB |
+- Python 3.x
+- NumPy
+- Matplotlib
+- VAMPIRE Atomistic Spin Dynamics package
+
+Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
 # Running the Simulation
 
-## Compile VAMPIRE
+Run the VAMPIRE simulation:
 
 ```bash
-make -j4
+bash run.sh
+```
+
+Plot the generated data:
+
+```bash
+python plot.py
 ```
 
 ---
 
-## Run Spin Dynamics
-
-```bash
-./run.sh
-```
-
----
-
-## Generate Plots
-
-```bash
-python3 plot.py
-```
-
----
-
-# Results
+# Outputs
 
 The simulation generates:
-- magnetization evolution
-- magnetization component dynamics
-- spin relaxation behavior
 
-Example outputs:
+- Magnetization dynamics
+- Spin component evolution
+- Magnetization magnitude plots
+- Time-dependent magnetic response
+
+Representative outputs:
+
 - `magnetization_components.png`
 - `magnetization_magnitude.png`
 
 ---
 
-# Example Workflow
+# Learning Objectives
 
-```bash
-./run.sh
-python3 plot.py
-```
+This project was developed to explore:
 
----
-
-# Computational Methods
-
-The project uses:
-- atomistic spin dynamics
-- LLG integration
-- stochastic thermal fluctuations
-- Heisenberg exchange coupling
-
-implemented internally using the VAMPIRE simulation engine.
+- Atomistic spin dynamics
+- Magnetic relaxation processes
+- Heisenberg exchange interactions
+- Numerical simulation techniques
+- Magnetization dynamics in ferromagnets
+- Computational condensed matter physics
 
 ---
 
-# Future Extensions
+# References
 
-Possible future upgrades:
-- Curie temperature simulations
-- Monte Carlo thermodynamics
-- ultrafast magnetic switching
-- non-Hermitian spin dynamics
-- ferrimagnetic materials
-- applied magnetic fields
-- spin-wave analysis
+- VAMPIRE Atomistic Spin Dynamics Software
+- Landau-Lifshitz-Gilbert equation
+- Classical Heisenberg model
+- Spin dynamics simulations in ferromagnetic materials
 
 ---
 
-# Research Relevance
+# Disclaimer
 
-This project is relevant for:
-- computational magnetism
-- spintronics
-- condensed matter physics
-- atomistic simulations
-- magnetic materials modeling
-- ultrafast magnetization dynamics
-
----
-
-# Author
-
-Akshu Attri
-
-Computational Condensed Matter Physics  
-Monte Carlo Simulations | Spin Dynamics | Quantum Materials
+This repository is intended for educational, exploratory, and research-learning purposes.

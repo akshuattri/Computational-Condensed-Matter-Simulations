@@ -11,10 +11,7 @@ This project was developed for learning, numerical experimentation, and research
 The non-Hermitian SSH model is described using a tight-binding Hamiltonian with asymmetric hopping amplitudes:
 
 $$
-H = \sum_n (t_1 + \gamma)c_{n,A}^\dagger c_{n,B}
-+
-(t_2 - \gamma)c_{n+1,A}^\dagger c_{n,B}
-+ h.c.
+H = \sum_n (t_1 + \gamma)c_{n,A}^\dagger c_{n,B} + (t_2 - \gamma)c_{n+1,A}^\dagger c_{n,B} + h.c.
 $$
 
 where:

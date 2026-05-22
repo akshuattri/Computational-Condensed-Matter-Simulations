@@ -1,0 +1,35 @@
+# BCC Fe Spin Dynamics
+
+material:file=Fe.mat
+
+# Crystal Structure
+
+create:crystal-structure=bcc
+
+dimensions:unit-cell-size = 2.866
+
+dimensions:system-size-x = 8
+dimensions:system-size-y = 8
+dimensions:system-size-z = 8
+
+# Simulation Type
+
+sim:program=benchmark
+
+# Temperature
+
+sim:temperature=300
+
+# Time Integration
+
+sim:time-step=1.0e-15
+
+sim:total-time-steps=50000
+
+# Output
+
+output:temperature
+output:mean-magnetisation-length
+output:mean-magnetisation
+
+

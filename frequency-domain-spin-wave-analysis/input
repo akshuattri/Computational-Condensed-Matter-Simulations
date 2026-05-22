@@ -1,0 +1,23 @@
+material:file=Fe.mat
+
+create:crystal-structure=bcc
+
+dimensions:unit-cell-size = 2.866
+
+dimensions:system-size-x = 30
+dimensions:system-size-y = 30
+dimensions:system-size-z = 30
+
+sim:program=benchmark
+
+sim:temperature=10
+
+sim:time-step=1.0e-15
+
+sim:total-time-steps=100000
+
+sim:applied-field-strength = 5.0
+
+output:temperature
+output:mean-magnetisation
+output:mean-magnetisation-length

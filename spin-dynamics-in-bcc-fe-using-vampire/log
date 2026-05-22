@@ -1,0 +1,45 @@
+21-05-2026 [11:04:25] Logfile opened
+21-05-2026 [11:04:25] Executable : vampire-serial
+21-05-2026 [11:04:25] Host name  : SS-lab:
+21-05-2026 [11:04:25] Directory  : /home/akshu/alps_project/vampire/spin-dynamics-in-bcc-fe-using-vampire
+21-05-2026 [11:04:25] Process ID : 6204
+21-05-2026 [11:04:25] Version    : 7.0.0
+21-05-2026 [11:04:25] Githash    : 525bc27ee44c525aee229570f30f3d4c61d54f66
+21-05-2026 [11:04:25] Opening main input file "input".
+21-05-2026 [11:04:25] Parsing system parameters from main input file.
+21-05-2026 [11:04:25] Opening material file "Fe.mat".
+21-05-2026 [11:04:25] Parsing material file for parameters.
+21-05-2026 [11:04:25] Generating neighbour interactions for a lattice of 3 x 3 x 3 unit cells for neighbour calculation
+21-05-2026 [11:04:25] Calculating alloy properties of system
+21-05-2026 [11:04:25] Determining atomic composition:
+21-05-2026 [11:04:25] Material 1 Iron makes up 100 % of all atoms ( 54 atoms )
+21-05-2026 [11:04:25] Memory required for neighbourlist calculation:0.000432 MB
+21-05-2026 [11:04:25] Allocating memory for supercell array in neighbourlist calculation
+21-05-2026 [11:04:25] 	Allocating memory done
+21-05-2026 [11:04:25] Populating supercell array for neighbourlist calculation...
+21-05-2026 [11:04:25] 	Populating supercell array completed
+21-05-2026 [11:04:25] Memory required for neighbour list:0.003456 MB
+21-05-2026 [11:04:25] Generating neighbour list...
+21-05-2026 [11:04:25] 	Neighbour list calculation complete
+21-05-2026 [11:04:25] Deallocating supercell array for neighbour list calculation
+21-05-2026 [11:04:25] 	Supercell array deallocated
+21-05-2026 [11:04:25] Copying system data to optimised data structures.
+21-05-2026 [11:04:25] Number of atoms generated on rank 0: 54
+21-05-2026 [11:04:25] Memory required for copying to performance array on rank 0: 0.008208 MB RAM
+21-05-2026 [11:04:25] Identifying surface atoms using global threshold value of 8
+21-05-2026 [11:04:25] 38 surface atoms found.
+21-05-2026 [11:04:25] Memory required for creation of 1D neighbour list on rank 0: 0.000864 MB RAM
+21-05-2026 [11:04:25] Initialising data structures for exchange calculation.
+21-05-2026 [11:04:25] Unrolled exchange template requires 0.002MB RAM
+21-05-2026 [11:04:25] Number of atoms generated: 54
+21-05-2026 [11:04:25] Initializing vampire modules
+21-05-2026 [11:04:25] Macrocell size = 10,10,10 Angstroms
+21-05-2026 [11:04:25] Macrocells in x,y,z: 1	1	1
+21-05-2026 [11:04:25] Total number of macrocells: 1
+21-05-2026 [11:04:25] Memory required for macrocell arrays: 8e-05 MB
+21-05-2026 [11:04:25] Number of local macrocells on rank 0: 1
+21-05-2026 [11:04:25] Initialising data structures for anisotropy calculation for 100 materials
+21-05-2026 [11:04:25] Initialising statistics module
+21-05-2026 [11:04:25] Starting Simulation with Program Benchmark...
+21-05-2026 [11:04:25] Simulation run time [s]: 0.103177
+21-05-2026 [11:04:25] Simulation ended gracefully.

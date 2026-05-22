@@ -1,0 +1,13 @@
+# Non-Hermitian SSH Model 
+LATTICE_SIZE = 50
+
+T1 = 1.0
+T2 = 1.5
+
+GAMMA = 0.4
+
+BOUNDARY = OBC
+
+SAVE_EIGENVECTORS = TRUE
+
+RANDOM_SEED = 42

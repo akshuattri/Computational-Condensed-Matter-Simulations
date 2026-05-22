@@ -1,0 +1,25 @@
+# Material Definition for BCC Fe
+
+material:num-materials=1
+
+# Iron
+
+material[1]:material-name=Iron
+
+material[1]:atomic-spin-moment=2.2 !muB
+
+material[1]:initial-spin-direction=random
+
+# Damping
+
+material[1]:damping-constant=0.01
+
+# Exchange Interaction
+
+material[1]:exchange-matrix[1]=1.0e-21
+
+# Magnetic Anisotropy
+
+material[1]:uniaxial-anisotropy-constant=1.0e-24
+
+material[1]:uniaxial-anisotropy-direction = 0 , 0 , 1

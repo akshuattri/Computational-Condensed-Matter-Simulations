@@ -1,0 +1,38 @@
+# Hysteresis Loop Simulation in BCC Fe
+
+material:file=Fe.mat
+
+# Crystal Structure
+
+create:crystal-structure=bcc
+
+dimensions:unit-cell-size = 2.866
+
+dimensions:system-size-x = 30
+dimensions:system-size-y = 30
+dimensions:system-size-z = 30
+# Simulation Program
+
+sim:program=hysteresis-loop
+
+# Temperature
+
+sim:temperature=300
+
+# Field Sweep
+
+sim:minimum-applied-field-strength = -5
+
+sim:maximum-applied-field-strength = 5
+
+sim:applied-field-strength-increment = 0.1
+
+# Monte Carlo Parameters
+sim:equilibration-time-steps = 20000
+sim:loop-time-steps = 50000
+
+# Outputs
+
+output:applied-field-strength
+output:mean-magnetisation
+output:mean-magnetisation-length

@@ -9,7 +9,6 @@ Exploratory simulations of magnetic hysteresis behavior in ferromagnetic systems
 Magnetic hysteresis describes the lag between applied magnetic field and magnetization response.
 
 The magnetization response is represented as:
-
 $$
 M = \chi H
 $$
